@@ -33,7 +33,6 @@ class MainActivity : ComponentActivity() {
 
         val connManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val netRequest = NetworkRequest.Builder()
-            .addTransportType(NetworkCapabilities.TRANSPORT_CELLULAR)
             .setIncludeOtherUidNetworks(true)
             .build()
 
@@ -55,7 +54,6 @@ class MainActivity : ComponentActivity() {
 
         val connManager = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val netRequest = NetworkRequest.Builder()
-            .addTransportType(NetworkCapabilities.TRANSPORT_CELLULAR)
             .setIncludeOtherUidNetworks(true)
             .build()
 
